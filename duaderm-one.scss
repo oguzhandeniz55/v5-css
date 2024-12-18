@@ -1,0 +1,88 @@
+#header-main{
+    position: absolute;
+    padding-left:30px;
+    padding-right:30px;
+
+}
+#header-main:hover {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color:rgb(234 242 252 / 75%);
+    margin-top: 0;
+    transition: 0.5s ease;
+    #logo {
+        &, p {
+            
+        }
+    }
+    svg{
+        path{
+            fill:var(--text-body);
+            transition: 0.5s ease;
+        }
+    }
+    a{
+        span{
+            color:var(--text-body)!important;
+            transition: 0.5s ease;
+        }
+    }
+    #hm-links{
+        .badge{
+            background-color: var(--bg-black)!important;
+            color: var(--text-white)!important;
+        }
+    }
+}
+.header-sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 80;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 6%);
+        #header-main {
+                padding-top: 30px;
+                padding-bottom: 30px;
+                background-color:rgb(234 242 252 / 75%);
+                &:hover{
+                    background-color:rgb(234 242 252 / 100%);
+                }
+                margin-top: 0;
+                transition: 0.5s ease;
+            #logo {
+                &, p {
+                    
+                }
+            }
+            svg{
+                path{
+                    fill:var(--text-body);
+                    transition: 0.5s ease;
+                }
+            }
+            a{
+                span{
+                    color:var(--text-body)!important;
+                    transition: 0.5s ease;
+                }
+            }
+        }
+        #header-menu {
+            display: none !important;
+        }
+        #main-menu {
+            display: none !important;
+        }
+        &.header-sticky-direction {
+            #main-menu {
+                display: block !important;
+            }
+        }
+        #hm-links{
+            .badge{
+                background-color: var(--bg-black)!important;
+                color: var(--text-white)!important;
+            }
+        }
+}
